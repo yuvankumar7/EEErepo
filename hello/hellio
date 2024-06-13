@@ -1,0 +1,20 @@
+package packvar;
+ 
+import java.util.ArrayList;
+import java.util.List;
+ 
+public class VarUsage {
+	public static void main(String[] args) {
+		String s = new String("Hello World");
+ 
+		var x = s; // var allowed in the variable declaration
+		System.out.println(x);
+ 
+		List<String> l = new ArrayList<>();
+		l.add("List.Hello");
+		for (var lx : l) { // var allowed in enhanced for loop
+			System.out.println(lx);
+		}
+	}
+}
+
